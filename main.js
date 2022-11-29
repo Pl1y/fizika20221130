@@ -1,11 +1,11 @@
 
 var darab = 0
-var elso = 9
-var masodik = 3
-var harmadik = 0
-var negyedik = 0
-var otodik = 0
-var hatodik = 0
+var elso = 2
+var masodik = 2
+var harmadik = 2
+var negyedik = 2
+var otodik = 2
+var hatodik = 2
 
 function genonce() {
     var num1 = Math.floor(Math.random()* (7 - 1) + 1);
