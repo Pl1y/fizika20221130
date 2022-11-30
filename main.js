@@ -73,3 +73,10 @@ function sleep(milliseconds) {
       currentDate = Date.now();
     } while (currentDate - date < milliseconds);
   }
+
+function exportTableToExcel(){
+  /* Create worksheet from HTML DOM TABLE */
+  var wb = XLSX.utils.table_to_book(document.getElementById("values"));
+  /* Export to file (start a download) */
+  XLSX.writeFile(wb, "valoszinuseg.xlsx");
+}
